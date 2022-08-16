@@ -4,62 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formlar</title>
+    <title>Hemen Üye Ol</title>
 </head>
 <body>
-    
-    <form action="/Home/Register">
+
+    <h1>Lütfen Formu Eksiksiz Doldurun.</h1>
+    <hr>
+
+
+    <form>
+
+        <h4>Hesap Bilgileriniz</h4>
         <p>
-            Ad <input type="text" name="Ad" placeholder="Adınızı giriniz" required>
+            Kullanıcı Adı: <input type="text" name="username" placeholder="Kullanıcı adınızı giriniz." required>
         </p>
-
         <p>
-            Soyad <input type="text" name="Soyad" placeholder="Soyadınızı giriniz" required>
+            Eposta: <input type="email" name="eposta" placeholder="Epostanızı giriniz." required>
+        </p> 
+        <p>
+            Parola: <input type="password" name="parola" placeholder="Parolanızı giriniz." required>
         </p>
+        
 
+
+        <h4>Kişisel Bilgileriniz</h4>
         <p>
-            Eposta <input type="email" name="Eposta"required>
+            Ad: <input type="text" name="ad" placeholder="Adınızı giriniz." required>
         </p>
-
         <p>
-            Beni Hatırla <input type="checkbox" name="benihatirla">
+            Soyad: <input type="text" name="soyad" placeholder="Soyadınızı giriniz." required>
         </p>
-
         <p>
-            Erkek <input type="radio" name="cinsiyet">
-            Kadın <input type="radio" name="cinsiyet">
-        </p>
-
-        <p>
-            Hobiler <br>
-
-            Sinema <input type="checkbox" name="hobi">
-            Spor <input type="checkbox" name="hobi">
-            Kitap okumak <input type="checkbox" name="hobi"> 
-        </p>
-
-        <p>
+            Şehir:
             <select name="sehir">
-                <option>Kocaeli</option>
-                <option>İstanbul</option>
+                <option>Seçiniz</option>
                 <option>Ankara</option>
+                <option>İstanbul</option>
+                <option>Kocaeli</option>
             </select>
         </p>
-
         <p>
-            <select multiple name="sehirler">
-                <option>Kocaeli</option>
-                <option>İstanbul</option>
-                <option>Ankara</option>
-            </select>
+            Cinsiyet:
+            <input type="radio" name="cinsiyet"> Erkek
+            <input type="radio" name="cinsiyet"> Kadın
         </p>
-
-
-        <input type="submit" values="Kaydet">
-
+        <p>
+            Hobileriniz:
+            <input type="checkbox" name="hobiler"> Sinema
+            <input type="checkbox" name="hobiler"> Gezmek
+            <input type="checkbox" name="hobiler"> Spor
+            <input type="checkbox" name="hobiler"> Kitap
+        </p>
+        <input type="submit" value="Kaydet"
     </form>
-
-
-
+    
 </body>
 </html>
